@@ -1,8 +1,12 @@
 '''Given an integer x, return true if x is a palindrome, and false otherwise.'''
 
-x = 121
-x = str(x)
-if x == x[::-1]:
-    print("The number is a palindrome.")
-else:
-    print("The number is not a palindrome.")
+class Solution:
+    def isPalindrome(self,x):
+        x = str(x)
+        if x == x[::-1]:
+            print("Is pelindrome")
+        else:
+            print("Is not a palindrome")
+Sol = Solution()
+
+Sol.isPalindrome(number = int(input("Enter the number: ")))
